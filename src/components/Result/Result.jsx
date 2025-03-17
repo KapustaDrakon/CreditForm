@@ -105,6 +105,21 @@ const ResultButton = styled.button`
   border: none;
   border-radius: 50px;
   cursor: pointer;
+
+  &:hover {
+    background: #dfe3e6;
+    color: #000000;
+  }
+
+  &:active {
+    background: linear-gradient(
+        to left bottom,
+        rgba(220, 49, 49, 1) 0%,
+        rgba(255, 79, 79, 0) 93%
+      ),
+      #ff5e56;
+    color: #ffffff;
+  }
 `;
 
 const ResultShow = styled.span`

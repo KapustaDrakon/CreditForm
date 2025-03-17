@@ -354,6 +354,7 @@ const PopupButtonAdd = styled.button`
   &:hover,
   &:active {
     background: #ea0029;
+    box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
   }
 
   @media (min-width: 768px) {
