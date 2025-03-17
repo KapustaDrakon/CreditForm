@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Popup from "./components/Popup/Popup";
+import ButtonShow from "./components/ButtonShow/ButtonShow";
+import { useState } from "react";
 
 function App() {
+  const [months, setMonths] = useState('12');
+  const [time, setTime] = useState('month');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Popup months={months} setMonths={setMonths} time={time} setTime={setTime} />
+      <ButtonShow />
     </div>
   );
 }
