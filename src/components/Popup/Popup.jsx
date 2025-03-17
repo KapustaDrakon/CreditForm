@@ -72,7 +72,9 @@ const Popup = ({ months, setMonths, time, setTime }) => {
       "Сумма платежа": Math.ceil(result),
     };
     console.log(resultObj);
-    return popupClose();
+    setInputValue("");
+    setMonths("12");
+    document.getElementById("result").style.display = "none";
   };
 
   return (
